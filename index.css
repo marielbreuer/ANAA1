@@ -11,8 +11,7 @@ img{
     max-width: 100%;
 }
 body{
-    margin: o;
-    /*height: 100%;*/
+    margin: 0;
     width: 100%;
     background-image: url(background1.png);
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +19,6 @@ body{
 }
 .user{
     margin: 10px;
-    width: 95%;
     height: 10%;
     display: flex;
     padding: 7px;
@@ -51,28 +49,7 @@ body{
         fill: white;
     }
 }
-/*
-.menu{
-    list-style: none;
-    text-decoration: none;
-    margin: auto;
-    display: flex;
-    width: 95%;
-    height: 40px;
-    justify-content: flex-end;
-}
 
-.nav-li{
-    display: block;
-    align-content: center;
-}
-
-.menu-item{
-    padding: 10px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-}*/
 .nav{
      position: relative;
     /* background-color: grey;*/
@@ -100,42 +77,9 @@ body{
     background-color: white;
     color: black;
 }
-.hamb {
-    width: 40px;
-    height: 40px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;        
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 4px;
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    cursor: pointer; /*manito*/
-}
 
-.line{
-    display: block;
-    width: 100%;
-    height: 5px;
-    border-radius: 3px;
-    background-color: black;
-}
 
-@media (max-width: 768px) {
-    .main-ul {
-        display: none;
-    }
-    .main-ul.active {
-        display: block;
-    }
-    .main-li{
-        text-align: center;
-    }
-    .hamb{
-        display: flex;
-    }
+    
 }
 .cuerpo{
     width: 80%;
@@ -148,7 +92,8 @@ body{
     margin: auto;
     padding: 10px 10px 10px 10px;
     background-color: black;
-    position: relative;
+    position: fixed;
+    bottom:0;
     color: white;
     justify-content: center;
 }

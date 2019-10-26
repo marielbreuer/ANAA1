@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 p{
     font-family: 'Roboto Condensed', sans-serif;  
@@ -17,7 +18,7 @@ h4{
     font-family: 'Press Start 2P', cursive;
 }
 body{
-    margin: o;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-image: url(background4.png);
@@ -29,7 +30,6 @@ img{
 }
 .user{
     margin: 10px;
-    width: 80%;
     height: 10%;
     display: flex;
     padding: 7px;
@@ -66,32 +66,33 @@ img{
         fill: white;
     }
 }
-.menu{
-    list-style: none;
-    text-decoration: none;
-    margin: auto;
-    display: block;
-    position: relative;
-    display: flex;
-    width: 95%;
-    height: 40px;
-    
-}
+
 .nav{
-    align-content: center;
-    margin: auto;
+    position: relative;
+   
 }
-.nav-li{
-    display: block;
-    justify-content: flex-end;
-    
+
+.menu{
+   display: flex;
+   margin: 40px;
+   padding: 0;
+   list-style: none;
+   justify-content: flex-end;
 }
 
 .menu-item{
-    padding: 10px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
+   display: block;
+   padding: 15px;
+   text-transform: uppercase;
+   size: 40px; /*!!!*/
+   color: white;
+   text-decoration: none;
+   transition: background 200ms ease;
+}
+
+.menu-item:hover{
+   background-color: white;
+   color: black;
 }
 .cuerpo{
     max-width: 75%;
@@ -142,10 +143,7 @@ img{
     display: block;
     padding: 10px;
 }
-/*.img-art{
-    width: 250px;
-    height: 250px;
-}*/
+
 @media (max-width:768px){
     .biblioteca{
         grid-template-columns: repeat(2, 6fr);
@@ -183,57 +181,22 @@ img{
 
 .a-letra{
     display: block;
-    padding: 15px;
+    /*padding: 5px;*/
     text-transform: uppercase;
-    size: 40px; 
+    size: 20px; 
     color: white;
     text-decoration: none;
     transition: background 200ms ease;
-}
-.letra abc:hover{
-    background-color: white;
-    color: black;
-/*
-.menu{
-    list-style: none;
-    text-decoration: none;
-    margin: auto;
-    display: block;
-    position: relative;
-    display: flex;
-    width: 95%;
-    height: 40px;
     
 }
-.nav{
-    align-content: center;
-    margin: auto;
-}
-.nav-li{
-    display: block;
-    justify-content: flex-end;
-    
-}
-
-.menu-item{
-    padding: 10px;
-    color:white;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-
-
-    .menu-item{
-    display: block;
-    padding: 15px;
-    text-transform: uppercase;
-    size: 40px; 
-    color: white;
-    text-decoration: none;
-    transition: background 200ms ease;
-}
-
-.menu-item:hover{
+.a-letra:hover{
     background-color: white;
     color: black;
+    justify-content: space-between;
 
-*/
+@media (max-width:768px){
+    .abc{
+        grid-template-columns: repeat(9, 3fr);
+}
+
+
